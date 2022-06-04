@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoApp</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="./assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="./img/vendor/aos/aos.css" rel="stylesheet">
+    <link href="./img/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./img/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./img/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="./img/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="lineaInicial" class="d-flex align-items-center correoEscuela">
+        <div class="container  d-flex justify-content-center justify-content-md-between">
+            <div class="contacto-informacion  d-flex align-items-center">
+                <i style="color: green; margin-right: 5px" class="bi bi-envelope-fill animate__animated animate__flash"></i><a class="animate__animated animate__flash" href="cbtis150.controlescolar@uemstis.sems.gob.mx">cbtis150.controlescolar@uemstis.sems.gob.mx</a>
+            </div>
+            <div class="redes-sociales d-none d-md-block redesEscuela">
+                <a target="_blank" href="https://www.facebook.com/cbtis150cmb" class="facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <header id="header">
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark  navb" style="background-color: rgba(25, 25, 25, 0.95);">
+            <div class="container-fluid" style="margin-left: 15%;">
+                <a class="navbar-brand logo" href="./index.html">ECOLOGÍA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navegacion" style="margin-right: 20%;">
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link active secciones scrollto" aria-current="page" style="color: #fff;" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link scrollto" style="color: #fff;" href="./huellaHidrica.html">Calcula tu huella hidríca</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link scrollto" style="color: #fff;" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="filtro" class="d-flex align-items-center">
+        <div class="container position-relative">
+            <h1 class="animate__animated animate__backInDown titulo_principal" id="titulo_principal">PIENSA GLOBALMENTE, ACTÚA LOCALMENTE</h1>
+            <h2 class="animate__animated animate__bounceInDown">La naturaleza es como una infinita esfera que tiene el centro en todas partes y en ninguna la circunferencia</h2>
+            <li class="nav-item dropdown btn-get-started animate__animated animate__flash boton_inicio">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item boton_inicio_navegacion" href="./index.html">Inicio</a></li>
+                    <li><a class="dropdown-item boton_inicio_navegacion" href="./huellaHidrica.html">Calcula tu huella hidrica</a></li>
+                    <li><a class="dropdown-item boton_inicio_navegacion" href="./nosotros.html">Nosotros</a></li>
+                </ul>
+            </li>
+        </div>
+    </section>
+
+
+    <section id="filtro2" class=" align-items-center">
+        <div class="container text-center" data-aos="fade-up-right">
+            <h2 class="animate__animated animate__backInLeft titulo_principal" id="titulo_principal">Huella Ecológica</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card carta_menu" id="carta_menu">
+                        <div class="card-header">
+                            Secciones
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item scrollto"><a href="#">1-Inicio</a></li>
+                            <li class="list-group-item scrollto"><a href="#filtro2">2-Huella ecologica</a></li>
+                            <li class="list-group-item scrollto"><a href="#filtro3"> 3-Huella hidrica</a></li>
+                            <li class="list-group-item scrollto"><a href="#filtro4">4-Ecosistema</a></li>
+                            <li class="list-group-item scrollto"><a href="./recycling.html">5-Recycling</a></li>
+                            <li class="list-group-item scrollto"><a href="./energias-renovables.html">6-Energias renovables</a> </li>
+                            <li class="list-group-item scrollto"><a href="./vidaSustentable.html">7-Vida sostenible</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card definicion_huellaE pieVerde" id="definicion_huellaE">
+                        <img src="./img/pie-verde.jpeg" class="card-img-top imagen_cards" alt="Definicion de huella ecologica">
+                        <div class="card-body">
+                            <h5 class="card-title nombre-cards">Definicion</h5>
+                            <p class="card-text">Analiza los patrones de consumo de recursos y la producción de desechos de una población determinada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row informacion_cards" id="informacion_cards">
+                <div class="col m-3">
+                    <div class="card definicion_huellaE informacion_cards como-reducir_huellaE" id="definicion_huellaE">
+                        <img src="./img/mundoiFeliz.jpeg" class="card-img-top imagen_cards" alt="Definicion de huella ecologica">
+                        <div class="card-body">
+                            <h5 class="card-title nombre-cards">Tips</h5>
+                            <p class="card-text">1-Reduce el consumo de carne. 2-Consume alimentos locales. 3-Emplea bolsas y contenedores reutilizables. 4-Reutiliza los alimentos..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-3">
+                    <div class="card definicion_huellaE informacion_cards2 " id="definicion_huellaE">
+                        <img src="./img/mundo-verde.jpeg" class="card-img-top imagen_cards" alt="Definicion de huella ecologica">
+                        <div class="card-body">
+                            <h5 class="card-title nombre-cards">Como reducir huella</h5>
+                            <p class="card-text">Uso de bombillas de bajo consumo. Instalación de paredes y techos aislantes. Ventanas de doble cristal..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="filtro3">
+        <div class="container text-center">
+
+            <div class="row" data-aos="fade-down-right">
+                <div>
+                    <h2>Huella hidrica</h2>
+                </div>
+                <div class="col col-4">
+                    <div class="card" id="informacion_carta">
+                        <img src="./img/huellaH-definicion.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titulo_card_informacion">Huella hidríca</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Huella hídrica
+                              </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card" id="informacion_carta">
+                        <img src="./img/hh.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titulo_card_informacion">HH</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#modalHH">
+                                HH
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card" id="informacion_carta">
+                        <img src="./img/huellaHidrica.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titulo_card_informacion">Calcula tu huella hidrica</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="./huellaHidrica.html" id="botones-huellaH" class="btn btn-primary boton_carta_informacion">Calcula tu huella hidrica</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-down-right">
+                <div>
+                    <h2>Clasificación de las aguas para calcular la huella hídrica según la HH</h2>
+                </div>
+                <div class="col col-4">
+                    <div class="card" id="informacion_carta">
+                        <img src="./img/aguaAzul.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titulo_card_informacion">Agua azul</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaAzul">
+                                Agua azul
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card" id="informacion_carta">
+                        <img src="./img/aguaVerde.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titulo_card_informacion">Agua verde</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <button type="button" class="btn btn-primary" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaVerde">
+                                Agua verde
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card" id="informacion_carta">
+                        <img src="./img/aguaGris.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titulo_card_informacion">Agua gris</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaGris">
+                                Agua gris
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div data-aos="zoom-in">
+                    <img class="huellaHidricaimagen" src="./img/huellaHidrica.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="filtro4" class="" data-aos="zoom-in">
+        <div class="container ">
+            <h3 class="text-center">ECOSISTEMAS</h3>
+            <div>
+                <center style="color: rgb(78, 73, 73);">
+                    <p class="texto-reforestacion">
+                        El ecosistema es el conjunto de especies de un área determinada que interactúan entre ellas y con su ambiente abiótico; mediante procesos como la depredación, el parasitismo, la competencia y la simbiosis, y con su ambiente al desintegrarse y volver a
+                        ser parte del ciclo de energía y de nutrientes. Las especies del ecosistemam incluyendo bacterias, hongos, plantas y animales dependen unas de otras. Las relaciones entre las especies y su medio, resultan en el flujo de materia
+                        y energía del ecosistema.
+                    </p>
+                </center>
+            </div>
+            <div class="row">
+                <div class="col animate__animated animate__flash">
+                    <center><img class="ecosistema-imagen" src="./img/Ecosistemas.jpeg"></center>
+                </div>
+                <div class="col animate__animated animate__flash">
+                    <center><img class="biomasa-imagen" src="./img/Biomas1.jpeg"></center>
+                </div>
+            </div>
+            <div>
+                <center><b><h2 class="m-4">REFORESTACIÓN</h2><br></b></center>
+                <p class="text-center texto-reforestacion2 texto-reforestacion">
+                    La reforestación se refiere a la repoblación de un área que anteriormente tenía árboles, pero<br> por alguna razón esos árboles fueron deforestados ya sea por tala, incendio, plagas,<br> condiciones climáticas, sequía, etc.<br> Una
+                    de sus principales importancias es:<br> - El proceso que lleva a cabo la fotosíntesis, en el que utilizan parte del dióxido de carbono atrapado en la atmósfera para convertirlo en oxígeno.<br> - Grandes áreas boscosas ayudan a almacenar
+                    y eliminar partículas y contaminantes que son dañinos para el ser humano, como el polvo, el humo o las cenizas.<br> - Reducen las consecuencias del efecto invernadero además de ser un hábitat para miles de especies animales y vegetales.<br>
+                    <br>El CBTis No.150 “Carlos María de Bustamante” realizó una actividad de reforestación el día 25 de Mayo del 2022, <br> en donde participaron alumnos del 4to Semestre de las diferentes especialidades, aportando así su granito de arena
+                    al medio ambiente
+
+                </p><br>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col" id="reforestacion-imagen1" data-aos="fade-down-right">
+                        <img class="reforestacion-imagen1" src="./img/Refore1.jpg" alt="">
+                    </div>
+                    <div class="col" id="reforestacion-imagen2" data-aos="fade-down-right">
+                        <img class="reforestacion-imagen2" src="./img/Refore2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <center><b><h2>RECYCLING</h2><br></b></center>
+                ==AQUI SE INSERTA UN REPORTE DE EL COHETE==
+            </div> -->
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-top container ">
+            <div class="row fila">
+                <div class="col-lg-2 col-md-6 footer-links m-5" style="color: #16cc1f;">
+                    <h4 class="text-light">Páginas</h4>
+                    <ul style="list-style: none;">
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light" href="#">Inicio</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light" href="./huellaHidrica.html">Calcula tu huella hidrica</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light" href="./nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-links m-5" style="color: #16cc1f;">
+                    <h4 class="text-light">Integrantes</h4>
+                    <ul style="list-style: none;">
+                        <li>➣<a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Victor Manuel Luis Hernández</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Jorge Luis Martínez Contreras</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Guendananaxhi Orozco Bustamantamante</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Jose David Ortega Vasquez</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Monserrat Noemi Sánchez Hernández</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Elizabeth Vásquez Castillo</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Soledad Velasco Santiago</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Javier Pacheco Sarmiento</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Yesenia Carmela Matías Martínez</a></li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <p class="text-light equipo" id="fecha"></p>
+                    <p class="bloque_footer">2 Bloque 4D</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Huella hidrica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    La huella hídrica es un indicador del uso de agua dulce que hace referencia tanto a su uso directo como indirecto por parte de un consumidor o productor
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalHH" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">HH</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="mymodal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hablamos de la Huella Hídrica en esta infografía para recordar la importancia de conocer qué es y cómo se mide el agua que gastamos, tanto aquella que vemos como aquella que no
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aguaAzul" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agua azul</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="mymodal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El bello color blanco-azul que tiene este lugar se debe a una combinación de sales carbonatadas que llevan disueltas. Estas sales no afectan a las personas por lo que puedes entrar a refrescarte y no quedarte con las ganas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aguaVerde" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agua verde</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="mymodal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El agua verde es el agua que está en la atmósfera y que se precipita o se evapora. Por lo general se refiere a agua que llueve. Por ejemplo para regar un campo necesitamos al menos 100mm de agua al año.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aguaGris" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agua gris</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="mymodal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El agua gris se considera el agua necesaria para que un foco de contaminación se pueda diluir y pase a tener niveles aptos para el consumo. Es decir, si una empresa tira 10 litros de agua contaminada a un lago, cuanta agua de ese lago necesitamos para
+                    que esos 10 litros se puedan considerar diluidos
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.min.js "></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+
+</html>

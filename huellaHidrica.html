@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoApp</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./estilos.css"> -->
+
+    <link href="./assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="./img/vendor/aos/aos.css" rel="stylesheet">
+    <link href="./img/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./img/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./img/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="./img/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body class="body">
+
+
+
+    <section id="lineaInicial" class="d-flex align-items-center correoEscuela">
+        <div class="container  d-flex justify-content-center justify-content-md-between">
+            <div class="contacto-informacion  d-flex align-items-center">
+                <i style="color: green; margin-right: 5px" class="bi bi-envelope-fill"></i><a href="cbtis150.controlescolar@uemstis.sems.gob.mx">cbtis150.controlescolar@uemstis.sems.gob.mx</a>
+            </div>
+            <div class="redes-sociales d-none d-md-block redesEscuela">
+                <a target="_blank" href="https://www.facebook.com/cbtis150cmb" class="facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <header id="header">
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark  navb" style="background-color: rgba(25, 25, 25, 0.95);">
+            <div class="container-fluid" style="margin-left: 15%;">
+                <a class="navbar-brand logo" href="./index.html">ECOLOGÍA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navegacion" style="margin-right: 20%;">
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link secciones" aria-current="page" style="color: #fff;" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link active" style="color: #fff;" href="./huellaHidrica.html">Calcula tu huella hidríca</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link" style="color: #fff;" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main data-aos="zoom-in">
+        <div class="container">
+            <div id="cabecera">
+                <h1 class="m-4">==Calcula tu huella hídrica==</h1>
+                <hr>
+            </div>
+            <div id="central">
+                <ul>
+                    <form method="get" name="Calculo" action="#">
+                        <h4><strong>Iniciamos con el WC</strong></h4>
+                        <p><span class="azul">¿Cuántas veces tiras de la cadena al día?</span>
+                            <input type="text" name="wc1cam" id="wc1cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul">¿Tienes instalado un sistema ahorrador de agua en el WC? </span>
+                            <select name="wc2cam" id="wc2cam" size="1">
+                                    <option value="5">Si tengo instalado un sistema</option>
+                                    <option value="10" selected>No, no tengo ningun sistema</option>
+                                </select>
+                        </p>
+                        <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Calcula tu gasto anual en litros de agua por el uso del WC</span>
+                            <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="wc(this.form)" />
+                            <input type="text" name="wc3cam" id="wc3cam" class="campo" onFocus="select()" disabled /> <b>L</b>
+                        </p>
+
+                        <h4> <strong>Seguimos con el cuarto de baño, (Ducha y lavabo)</strong> </h4>
+                        <p><span class="azul">¿Cuántas veces a la semana te bañas?</span>
+                            <input type="text" name="ducha1cam" id="ducha1cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul">¿Cuántos minutos duras bañandote?</span>
+                            <input type="text" name="ducha2cam" id="ducha2cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul">¿Cuántos baños en tina de das al año? <b>(Ninguno = 0)</b></span>
+                            <input type="text" name="ducha3cam" id="ducha3cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul">¿Tienes instalado un sistema ahorrador de agua en la regadera y las llaves?
+                                    (Temporizador, aireador, perlizador, etc.) </span>
+                            <select name="ducha4cam" id="ducha4cam" size="1">
+                                    <option value="6">Si, tengo instalado algún sistema</option>
+                                    <option value="9" selected>No, no tengo ningun sistema</option>
+                                </select>
+                        </p>
+                        <p><span class="azul"> ¿Cuántas veces te cepillas los dientes al día?</span>
+                            <input type="text" name="ducha5cam" id="ducha5cam" class="campo" size="8" onFocus="select()" />
+                        </p>
+                        <p><span class="azul"> ¿Cuántas veces te lavas las manos o la cara diariamente?</span>
+                            <input type="text" name="ducha6cam" id="ducha6cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul"> ¿Cuántas veces te razuras con maquina al mes?</span>
+                            <input type="text" name="ducha7cam" id="ducha7cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul"> ¿Cómo manejas la llave del lavabo?</span>
+                            <select name="ducha8cam" class="grandes" id="ducha8cam" size="1">
+                                    <option value="0.5">Cierro la llave siempre que puedo</option>
+                                    <option value="1.5" selected>Abro al empezar y no la cierro hasta acabar</option>
+                                </select>
+                        </p>
+                        <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Tu gasto anual en litros de agua por el uso de la ducha y del lavabo es
+                                    de...</span>
+                            <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="ducha(this.form)" />
+                            <input type="text" name="ducha9cam" id="ducha9cam" class="campo" onFocus="select()" disabled />
+                            <b>L</b>
+                        </p>
+
+
+                        <h4>Continuando en la cocina..</h4>
+                        <p><span class="azul">¿Cómo lavas los trastes? </span>
+                            <select name="cocina1cam" class="grandes" id="cocina1cam" size="1">
+                                    <option value="8000" selected>A mano con la llave a chorro</option>
+                                    <option value="6400">A mano con un lavado economizador</option>
+                                    <option value="7200">Con lavavajillas</option>
+                                    <option value="4800">Con lavavajillas y programas cortos</option>
+                                    <option value="3600">Con lavavajillas modelo economizador</option>
+                                </select>
+                        </p>
+                        <p><span class="azul">Calcula tu gasto anual en litros de agua por lavar los trastes</span>
+                            <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="cocina(this.form)" />
+                            <input type="text" name="cocina2cam" id="cocina2cam" class="campo" onFocus="select()" disabled />
+                            <b>L</b>
+                        </p>
+
+
+                        <h4><strong>Ahora pasamos del lado de lavar ropa</strong></h4>
+                        <p><span class="azul">¿Cómo es tu lavadora?</span>
+                            <select name="lavado1cam" class="grandes" id="lavado1cam" size="1">
+                                    <option value="1.2" selected>Es un modelo con más de 5 años</option>
+                                    <option value="1">Es un modelo moderno, convencional</option>
+                                    <option value="0.7">Es un modelo con economizador de agua</option>
+                                </select>
+                        </p>
+                        <p><span class="azul">¿Llenas por completo tu lavadora de agua? </span>
+                            <select name="lavado2cam" id="lavado2cam" size="1">
+                                    <option value="1.2" selected>No siempre</option>
+                                    <option value="0.8">Siempre</option>
+                                </select>
+                        </p>
+                        <p><span class="azul">¿Sueles utilizar programas de lavado?</span>
+                            <select name="lavado3cam" id="lavado3cam" size="1">
+                                    <option value="0.7">Si programas cortos</option>
+                                    <option value="1.5" selected>Si Programas largos</option>
+                                </select>
+                        </p>
+                        <p><span class="azul">¿Cuántas veces lavas a la semana?</span>
+                            <input type="text" name="lavado4cam" id="lavado4cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p><span class="azul">Número total de personas en la casa:</span>
+                            <input type="text" name="lavado5cam" id="lavado5cam" class="campo" onFocus="select()" />
+                        </p>
+                        <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Tu gasto anual en litros de agua por el lavado de ropa es de...</span>
+                            <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="lavado(this.form)" />
+                            <input type="text" name="lavado6cam" id="lavado6cam" class="campo" onFocus="select()" disabled />
+                            <b>L</b>
+                        </p>
+
+
+                        <h4><strong>Terminamos por el lado de zonas verdes</strong></h4>
+                        <p><span class="azul">En mi casa tengo....</span>
+                            <select name="plantas1cam" id="plantas1cam" size="1">
+                                    <option value="1000" selected>Unas cuantas plantas</option>
+                                    <option value="0">No tengo ninguna planta</option>
+                                </select>
+                        </p>
+                        <p><span class="azul">Si tienes terraza o jardín indica los metros cuadrados destinados a
+                                    plantas que se riegan <b>(pon 0 si no tienes)</b> </span>
+                            <input type="text" name="plantas2cam" id="plantas2cam" class="campo" onFocus="select()" /> <b>m²</b>
+                        </p>
+                        <p><span class="azul">¿Cómo riegas las plantas? </span>
+                            <select name="plantas3cam" id="plantas3cam" size="1">
+                                    <option selected="selected" value="0">Selecciona</option>
+                                    <option value="1200">A plena luz del sol</option>
+                                    <option value="800">De madrugada o por la noche</option>
+                                </select>
+                        </p>
+                        <p><span class="azul">¿Cuentas con algún sistema de riego ahorrador? </span>
+                            <select name="plantas4cam" class="grandes" id="plantas4cam" size="1">
+                                    <option selected="selected" value="0">Selecciona</option>
+                                    <option value="1.5">No, no tengo ningún sistema ahorrador</option>
+                                    <option value="0.5">Sí, tengo un sistema ahorrador</option>
+                                </select>
+                        </p>
+                        <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Tu gasto anual en litros de agua por el mantenimiento de plantas es
+                                    de...</span>
+                            <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="plantas(this.form)" />
+                            <input type="text" name="plantas5cam" id="plantas5cam" class="campo" onFocus="select()" />
+                        </p>
+
+
+                        <h4><strong>Los resultados finales</strong></h4>
+                        <p><span class="azul">A continuación vas a conocer los resultados finales del formulario.
+                                </span>
+                            <input type="button" value="Cálculo general" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="total(this.form)" />
+                        </p>
+                        <p><span class="azul">Tu consumo total de agua en litros al año es de... </span>
+                            <input class="animate__animated animate__bounceInDown" type="text" name="totalcam" id="totalcam" onFocus="select()" class="campo" disabled />
+                            <b>L</b>
+                        </p>
+                        <p><span class="azul">La diferencia entre tu consumo y el consumo medio es de...</span>
+                            <input type="text" name="total2cam" id="total2cam" onFocus="select()" class="campo" disabled />
+                            <b>L</b>
+                        </p>
+                        <p><span class="azul">Es decir, tu porcentaje sobre la media es del</span>
+                            <input type="text" name="total3cam" id="total3cam" onFocus="select()" class="campo" disabled /><b> (Ten en cuenta que el consumo medio estimado es de 60.000 litros por persona al año)</b>
+                            <b>%</b>
+                        </p>
+                        <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Si todo el mundo tuviera los mismos hábitos de consumo que tú el
+                                    gasto de agua en Euskadi por usos domésticos sería de... </span>
+                            <input type="text" name="total4cam" id="total4cam" onFocus="select()" class="campo" disabled /><b>
+                                    Hm<sup>3</sup> (ahora es de 130 Hm<sup>3</sup>)</b>
+                        </p>
+                        <p>
+                            <center><input type="submit" value="limpiar" id="Limpieza"></center>
+                        </p>
+
+                    </form>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top container">
+            <div class="row fila">
+                <div class="col-lg-2 col-md-6 footer-links m-5" style="color: #16cc1f;">
+                    <h4 class="text-light">Páginas</h4>
+                    <ul style="list-style: none;">
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light" href="#">Inicio</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light" href="./huellaHidrica.html">Calcula tu huella hidrica</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light" href="./nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-links m-5" style="color: #16cc1f;">
+                    <h4 class="text-light">Integrantes</h4>
+                    <ul style="list-style: none;">
+                        <li>➣<a class="text-light equipo" href="./nosotros.html">Victor Manuel Luis Hernández</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Jorge Luis Martínez Contreras</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Guendananaxhi Orozco Bustamantamante</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Jose David Ortega Vasquez</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Monserrat Noemi Sánchez Hernández</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Elizabeth Vásquez Castillo</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Soledad Velasco Santiago</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Javier Pacheco Sarmiento</a></li>
+                        <li><i data-aos="zoom-out-down" class="">➣</i> <a data-aos="zoom-out-down" class="text-light equipo" href="./nosotros.html">Yesenia Carmela Matías Martínez</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <p class="text-light equipo" id="fecha"></p>
+                        <p class="bloque_footer">2 Bloque 4D</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/calcular-huellaH.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.min.js "></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
