@@ -116,9 +116,6 @@
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
                     <label for="">Nombre</label>
                     <input type="text" class="form-control " name="mi_nombre">
-                    <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-</div> 
                     <label for="">Calificacion</label>
                     1
                     <input type="radio" name="mi_calificacion" value=1>
