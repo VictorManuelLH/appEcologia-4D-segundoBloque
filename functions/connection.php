@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "", "curso");
+$mysqli = new mysqli("us-cdbr-east-05.cleardb.net", "bbf18c5b27148f", "913a946a", "heroku_f5d46a24ee240ff");
 
 // evaluamos que se haya conectado coinectado correctamente
 
