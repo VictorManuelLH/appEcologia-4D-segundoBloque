@@ -217,28 +217,6 @@ h6 {
     color: #fff;
 }
 
-
-/* .imagen-grafica-Erenovables {
-    width: 80%;
-}
-
-.frases-salud {
-    margin-top: -6rem;
-    font-size: 13px;
-}
-
-.autor-frases {
-    margin-top: -4rem;
-}
-
-.walt {
-    margin-top: -5rem;
-}
-
-.victor {
-    margin-top: -6rem;
-} */
-
 #carta_menu {
     background-color: #16cc1f;
     width: 18rem;
@@ -261,6 +239,19 @@ h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+}
+
+div.btn-add {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+div.btn-add i {
+    color: #1fd660;
+    font-size: 50px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    transition: all .3s ease;
 }
 
 @media (min-width: 768px) {
@@ -349,8 +340,13 @@ h6 {
 }
 
 .energias-renovables {
-    margin-top: -43rem;
+    margin-top: -30rem;
     margin-left: -40rem;
+}
+
+.energias-fotovoltaicas {
+    margin-top: -44rem;
+    margin-right: 10rem;
 }
 
 #cartas-nosotros {
@@ -407,6 +403,139 @@ footer {
     margin-right: 5%;
 }
 
+@media (max-width: 1440px) {
+    /* Filtro 4 */
+    #filtro4 {
+        width: 100%;
+        height: calc(110vh - 100px);
+        background: url("") top center;
+        background-size: cover;
+        position: relative;
+    }
+    #filtro4:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.548);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #filtro4 h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    /* Huella ecologica */
+    .card-text {
+        font-size: 14px;
+    }
+    #reforestacion-imagen1 {
+        margin-top: -50px;
+        margin-left: 10%;
+    }
+    #reforestacion-imagen2 {
+        margin-top: -110px;
+        margin-right: 10%;
+    }
+    /* Energias renovables */
+    .texto-energiasR {
+        margin-left: 100px;
+    }
+    .energias-renovables {
+        margin-top: -28rem;
+        margin-left: -76rem;
+    }
+    .energias-fotovoltaicas {
+        margin-top: -41rem;
+        margin-left: -40rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    #texto-informacion {
+        font-size: 15px;
+    }
+    .ecosistema-imagen {
+        width: 50%;
+    }
+    #reforestacion-imagen1 {
+        margin-top: -130px;
+        margin-left: 20%;
+    }
+    #reforestacion-imagen2 {
+        margin-top: -130px;
+        margin-right: 10%;
+    }
+    /* Energias renovables */
+    .grafica-renovables {
+        width: 100%;
+    }
+    .texto-energiasR {
+        margin-left: 100px;
+    }
+    .energias-renovables {
+        margin-top: -12rem;
+        margin-left: -16rem;
+    }
+    .energias-fotovoltaicas {
+        margin-top: -30rem;
+        margin-left: -40rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Huella ecologica */
+    #texto-informacion {
+        font-size: 13px;
+    }
+    .informacion_cards {
+        margin-left: -10rem;
+    }
+    .definicion_huellaE {
+        margin-top: 1rem;
+    }
+    /* Huella hdrica */
+    #informacion_carta {
+        width: 90%;
+        height: 100%;
+    }
+    /* Ecosistemas */
+    .ecosistema-imagen {
+        /* margin-left: 20; */
+        width: 90%;
+    }
+    .biomasa-imagen {
+        width: 100%;
+    }
+    /* Reforestacion */
+    .reforestacion-imagen1 {
+        margin-left: -11rem;
+    }
+    #reforestacion-imagen2 {
+        margin-right: 35px;
+    }
+    /* Fuentes de energia */
+    .titulos-energiasR {
+        font-size: 20px;
+    }
+    .textoo {
+        font-size: 13px;
+    }
+    .energias-renovables {
+        width: 20%;
+        margin-top: -100px;
+    }
+    .energias-fotovoltaicas {
+        width: 20%;
+        margin-top: -22rem;
+    }
+    /* Sustentabilidad */
+}
+
 @media (max-width: 320px) {
     #filtro {
         width: 100%;
@@ -414,6 +543,18 @@ footer {
         background: url("./img/planta2.jpeg") top center;
         background-size: cover;
         position: relative;
+    }
+    #filtro h1 {
+        margin: 0 0 10px 0;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    #filtro h2 {
+        margin: 0 0 10px 0;
+        font-size: 15px;
     }
     #lineaInicial {
         background: #191919;
@@ -429,73 +570,43 @@ footer {
         background-size: cover;
         position: relative;
     }
-    #filtro3 {
-        width: 100%;
-        height: calc(80vh - 100px);
-        background: url("") top center;
-        background-size: cover;
-        position: relative;
-    }
-    #filtro3 h1 {
-        margin: 0 0 5px 0;
-        font-size: 10px;
-        font-weight: 700;
-        line-height: 56px;
-        text-transform: uppercase;
-        color: #fff;
-    }
-    #filtro3 h2 {
-        color: #eee;
-        font-size: 14px;
-    }
-    #filtro2 h1 {
-        margin: 0 0 10px 0;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 56px;
-        text-transform: uppercase;
-        color: #fff;
-    }
-    #filtro h1 {
-        margin: 0 0 10px 0;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 56px;
-        text-transform: uppercase;
-        color: #fff;
-    }
-    #filtro h2 {
-        color: #eee;
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
-    #filtro2 h1 {
-        margin: 0 0 10px 0;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 56px;
-        text-transform: uppercase;
-        color: #fff;
-    }
     #filtro2 h2 {
         color: #eee;
         margin-bottom: 30px;
         font-size: 14px;
     }
+    .texto-huellaE {
+        font-size: 9px;
+    }
     #filtro3 {
         width: 100%;
-        height: calc(80vh - 100px);
+        height: calc(80vh - 140px);
         background: url("") top center;
         background-size: cover;
         position: relative;
     }
     #filtro3 h2 {
         color: #000;
-        margin-bottom: 15px;
         font-size: 14px;
     }
+    #filtro4 {
+        width: 100%;
+        height: calc(100vh - 200px);
+        background: url("") top center;
+        background-size: cover;
+        position: relative;
+    }
+    #filtro4:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.548);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
     #carta_menu {
-        margin-top: -1rem;
+        margin-top: -2rem;
         background-color: #16cc1f;
         width: 7rem;
         font-size: 10px;
@@ -503,7 +614,7 @@ footer {
     #definicion_huellaE {
         font-size: 9px;
         width: 7.5rem;
-        height: 17rem;
+        height: 15rem;
     }
     .pieVerde {
         margin-bottom: 5rem;
@@ -515,14 +626,14 @@ footer {
         font-size: 12px;
     }
     .imagen_cards {
-        height: 40%;
+        height: 30%;
     }
     .informacion_cards {
-        margin-top: -5rem;
+        margin-top: -3rem;
         margin-left: 2.7rem;
     }
     .informacion_cards2 {
-        margin-top: -19rem;
+        margin-top: -18rem;
         margin-left: -7.3rem;
     }
     .grandes {
@@ -547,7 +658,7 @@ footer {
     }
     #boton_carta_informacion {
         width: 100%;
-        height: 60px;
+        height: 50px;
         font-size: 10px;
     }
     #botones-huellaH {
@@ -594,25 +705,7 @@ footer {
         font-size: 15px;
     }
     .texto-informacion {
-        font-size: 10px;
-    }
-    .imagenes-sustentabilidad {
-        width: 50%;
-    }
-    .mundo-verde {
-        width: 100%;
-    }
-    .imagen-grafica-Erenovables {
-        width: 100%;
-    }
-    .energias {
-        margin-top: -30rem;
-        margin-left: -80rem;
-        width: 100%;
-    }
-    .energias-renovables {
-        margin-top: -43rem;
-        margin-left: -40rem;
+        font-size: 7px;
     }
     .nombreNosotros {
         font-size: 12px;
@@ -620,9 +713,48 @@ footer {
     .informacion_nosotros {
         font-size: 10px;
     }
+    #texto-informacion {
+        font-size: 10px;
+    }
+    .reforestacion-imagen1 {
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+    .reforestacion-imagen2 {
+        margin-top: 100px;
+    }
     /* #cartas-nosotros {
         width: 7rem;
     } */
+    /* Energias renovables */
+    .textoo {
+        font-size: 10px;
+    }
+    .energias-renovables {
+        width: 50%;
+        margin-right: 40px;
+        margin-top: -32rem;
+    }
+    .grafica-renovables {
+        margin: 0;
+    }
+    /* vida sustentable */
+    .mundo-verde {
+        width: 100%;
+    }
+    .sustentabilidad {
+        width: 100%;
+    }
+    .planeta-verde {
+        width: 100%;
+    }
+    /* Calculo */
+    .imagenFuncion {
+        width: 100%;
+    }
+    .descripcionImagen {
+        font-size: 10px;
+    }
     #agua {
         margin-top: 30px;
     }

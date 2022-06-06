@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoApp</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
 
     <link href="./assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -47,10 +47,13 @@
                             <a class="nav-link active secciones scrollto" aria-current="page" style="color: #fff;" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item" style="margin-right: 7px;">
-                            <a class="nav-link scrollto" style="color: #fff;" href="./huellaHidrica.html">Calcula tu huella hidríca</a>
+                            <a class="nav-link scrollto" style="color: #fff;" href="./huellaHidrica.html">Calcula tu huella hídrica</a>
                         </li>
                         <li class="nav-item" style="margin-right: 7px;">
                             <a class="nav-link scrollto" style="color: #fff;" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 7px;">
+                            <a class="nav-link scrollto" style="color: #fff;" href="./index.php">Comentarios</a>
                         </li>
                     </ul>
                 </div>
@@ -60,15 +63,16 @@
     <section id="filtro" class="d-flex align-items-center">
         <div class="container position-relative">
             <h1 class="animate__animated animate__backInDown titulo_principal" id="titulo_principal">PIENSA GLOBALMENTE, ACTÚA LOCALMENTE</h1>
-            <h2 class="animate__animated animate__bounceInDown">La naturaleza es como una infinita esfera que tiene el centro en todas partes y en ninguna la circunferencia</h2>
+            <h2 class="animate__animated animate__bounceInDown" id="subtitulo-principal">La naturaleza es como una infinita esfera que tiene el centro en todas partes y en ninguna la circunferencia</h2>
             <li class="nav-item dropdown btn-get-started animate__animated animate__flash boton_inicio">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Inicio
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item boton_inicio_navegacion" href="./index.html">Inicio</a></li>
-                    <li><a class="dropdown-item boton_inicio_navegacion" href="./huellaHidrica.html">Calcula tu huella hidrica</a></li>
+                    <li><a class="dropdown-item boton_inicio_navegacion" href="./huellaHidrica.html">Calcula tu huella hídrica</a></li>
                     <li><a class="dropdown-item boton_inicio_navegacion" href="./nosotros.html">Nosotros</a></li>
+                    <li><a class="dropdown-item boton_inicio_navegacion" href="./index.php">Comentarios</a></li>
                 </ul>
             </li>
         </div>
@@ -86,12 +90,13 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item scrollto"><a href="#">1-Inicio</a></li>
-                            <li class="list-group-item scrollto"><a href="#filtro2">2-Huella ecologica</a></li>
-                            <li class="list-group-item scrollto"><a href="#filtro3"> 3-Huella hidrica</a></li>
+                            <li class="list-group-item scrollto"><a href="#filtro2">2-Huella ecológica</a></li>
+                            <li class="list-group-item scrollto"><a href="#filtro3"> 3-Huella hídrica</a></li>
                             <li class="list-group-item scrollto"><a href="#filtro4">4-Ecosistema</a></li>
                             <li class="list-group-item scrollto"><a href="./recycling.html">5-Recycling</a></li>
-                            <li class="list-group-item scrollto"><a href="./energias-renovables.html">6-Energias renovables</a> </li>
+                            <li class="list-group-item scrollto"><a href="./energias-renovables.html">6-Energías renovables</a> </li>
                             <li class="list-group-item scrollto"><a href="./vidaSustentable.html">7-Vida sostenible</a></li>
+                            <li class="list-group-item scrollto"><a href="./calculo_diferencial.html">8-Calculo diferencial</a></li>
                         </ul>
                     </div>
                 </div>
@@ -99,8 +104,8 @@
                     <div class="card definicion_huellaE pieVerde" id="definicion_huellaE">
                         <img src="./img/pie-verde.jpeg" class="card-img-top imagen_cards" alt="Definicion de huella ecologica">
                         <div class="card-body">
-                            <h5 class="card-title nombre-cards">Definicion</h5>
-                            <p class="card-text">Analiza los patrones de consumo de recursos y la producción de desechos de una población determinada.</p>
+                            <h5 class="card-title nombre-cards">Definición</h5>
+                            <p class="card-text texto-huellaE">Analiza los patrones de consumo de recursos y la producción de desechos de una población determinada.</p>
                         </div>
                     </div>
                 </div>
@@ -111,7 +116,7 @@
                         <img src="./img/mundoiFeliz.jpeg" class="card-img-top imagen_cards" alt="Definicion de huella ecologica">
                         <div class="card-body">
                             <h5 class="card-title nombre-cards">Tips</h5>
-                            <p class="card-text">1-Reduce el consumo de carne. 2-Consume alimentos locales. 3-Emplea bolsas y contenedores reutilizables. 4-Reutiliza los alimentos..</p>
+                            <p class="card-text texto-huellaE">1-Reduce el consumo de carne. 2-Consume alimentos locales. 3-Emplea bolsas y contenedores reutilizables. 4-Reutiliza los alimentos..</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +125,7 @@
                         <img src="./img/mundo-verde.jpeg" class="card-img-top imagen_cards" alt="Definicion de huella ecologica">
                         <div class="card-body">
                             <h5 class="card-title nombre-cards">Como reducir huella</h5>
-                            <p class="card-text">Uso de bombillas de bajo consumo. Instalación de paredes y techos aislantes. Ventanas de doble cristal..</p>
+                            <p class="card-text texto-huellaE">Uso de bombillas de bajo consumo. Instalación de paredes y techos aislantes. Ventanas de doble cristal..</p>
                         </div>
                     </div>
                 </div>
@@ -139,9 +144,9 @@
                     <div class="card" id="informacion_carta">
                         <img src="./img/huellaH-definicion.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title titulo_card_informacion">Huella hidríca</h5>
+                            <h5 class="card-title titulo_card_informacion">Huella hídrica</h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-success" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Huella hídrica
                               </button>
 
@@ -154,7 +159,7 @@
                         <div class="card-body">
                             <h5 class="card-title titulo_card_informacion">HH</h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#modalHH">
+                            <button type="button" class="btn btn-success" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#modalHH">
                                 HH
                               </button>
                         </div>
@@ -164,9 +169,9 @@
                     <div class="card" id="informacion_carta">
                         <img src="./img/huellaHidrica.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title titulo_card_informacion">Calcula tu huella hidrica</h5>
+                            <h5 class="card-title titulo_card_informacion">Calcula tu huella hídrica</h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <a href="./huellaHidrica.html" id="botones-huellaH" class="btn btn-primary boton_carta_informacion">Calcula tu huella hidrica</a>
+                            <a href="./huellaHidrica.html" id="botones-huellaH" class="btn btn-success">Calcula tu huella hídrica</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +186,7 @@
                         <div class="card-body">
                             <h5 class="card-title titulo_card_informacion">Agua azul</h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaAzul">
+                            <button type="button" class="btn btn-success" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaAzul">
                                 Agua azul
                               </button>
                         </div>
@@ -193,7 +198,7 @@
                         <div class="card-body">
                             <h5 class="card-title titulo_card_informacion">Agua verde</h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <button type="button" class="btn btn-primary" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaVerde">
+                            <button type="button" class="btn btn-success" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaVerde">
                                 Agua verde
                               </button>
                         </div>
@@ -205,18 +210,18 @@
                         <div class="card-body">
                             <h5 class="card-title titulo_card_informacion">Agua gris</h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <button type="button" class="btn btn-primary boton_carta_informacion" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaGris">
+                            <button type="button" class="btn btn-success" id="boton_carta_informacion" data-bs-toggle="modal" data-bs-target="#aguaGris">
                                 Agua gris
                               </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <!-- <div class="container">
                 <div data-aos="zoom-in">
                     <img class="huellaHidricaimagen" src="./img/huellaHidrica.jpeg" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -224,8 +229,8 @@
         <div class="container ">
             <h3 class="text-center">ECOSISTEMAS</h3>
             <div>
-                <center style="color: rgb(78, 73, 73);">
-                    <p class="texto-reforestacion">
+                <center style="color: rgb(5, 68, 29);">
+                    <p class="texto-reforestacion" id="texto-informacion">
                         El ecosistema es el conjunto de especies de un área determinada que interactúan entre ellas y con su ambiente abiótico; mediante procesos como la depredación, el parasitismo, la competencia y la simbiosis, y con su ambiente al desintegrarse y volver a
                         ser parte del ciclo de energía y de nutrientes. Las especies del ecosistemam incluyendo bacterias, hongos, plantas y animales dependen unas de otras. Las relaciones entre las especies y su medio, resultan en el flujo de materia
                         y energía del ecosistema.
@@ -242,7 +247,7 @@
             </div>
             <div>
                 <center><b><h2 class="m-4">REFORESTACIÓN</h2><br></b></center>
-                <p class="text-center texto-reforestacion2 texto-reforestacion">
+                <p class="text-center texto-reforestacion2 texto-reforestacion" id="texto-informacion">
                     La reforestación se refiere a la repoblación de un área que anteriormente tenía árboles, pero<br> por alguna razón esos árboles fueron deforestados ya sea por tala, incendio, plagas,<br> condiciones climáticas, sequía, etc.<br> Una
                     de sus principales importancias es:<br> - El proceso que lleva a cabo la fotosíntesis, en el que utilizan parte del dióxido de carbono atrapado en la atmósfera para convertirlo en oxígeno.<br> - Grandes áreas boscosas ayudan a almacenar
                     y eliminar partículas y contaminantes que son dañinos para el ser humano, como el polvo, el humo o las cenizas.<br> - Reducen las consecuencias del efecto invernadero además de ser un hábitat para miles de especies animales y vegetales.<br>
@@ -253,7 +258,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col" id="reforestacion-imagen1" data-aos="fade-down-right">
+                    <div class="col" id="reforestacion-imagen1" data-aos="fade-up">
                         <img class="reforestacion-imagen1" src="./img/Refore1.jpg" alt="">
                     </div>
                     <div class="col" id="reforestacion-imagen2" data-aos="fade-down-right">
@@ -267,6 +272,9 @@
             </div> -->
         </div>
     </section>
+    <div class="btn-add">
+        <a href="#"><button>⇑</button></a>
+    </div>
 
     <footer id="footer">
         <div class="footer-top container ">
