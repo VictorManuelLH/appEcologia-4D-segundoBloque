@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoApp</title>
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- <link rel="stylesheet" href="./estilos.css"> -->
 
     <link href="./assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,47 +74,47 @@
                     <form method="get" name="Calculo" action="#">
                         <h4><strong>Iniciamos con el WC</strong></h4>
                         <p><span class="azul">¿Cuántas veces tiras de la cadena al día?</span>
-                            <input type="text" name="wc1cam" id="wc1cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="wc1cam" id="wc1cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul">¿Tienes instalado un sistema ahorrador de agua en el WC? </span>
-                            <select name="wc2cam" id="wc2cam" size="1">
+                            <select class="form-select" name="wc2cam" id="wc2cam" size="1">
                                     <option value="5">Si tengo instalado un sistema</option>
                                     <option value="10" selected>No, no tengo ningun sistema</option>
                                 </select>
                         </p>
                         <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Calcula tu gasto anual en litros de agua por el uso del WC</span>
                             <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="wc(this.form)" />
-                            <input type="text" name="wc3cam" id="wc3cam" class="campo" onFocus="select()" disabled /> <b>L</b>
+                            <input class="" type="text" name="wc3cam" id="wc3cam" class="campo" onFocus="select()" disabled /> <b>L</b>
                         </p>
 
                         <h4> <strong>Seguimos con el cuarto de baño, (Ducha y lavabo)</strong> </h4>
                         <p><span class="azul">¿Cuántas veces a la semana te bañas?</span>
-                            <input type="text" name="ducha1cam" id="ducha1cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="ducha1cam" id="ducha1cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul">¿Cuántos minutos duras bañandote?</span>
-                            <input type="text" name="ducha2cam" id="ducha2cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="ducha2cam" id="ducha2cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul">¿Cuántos baños en tina de das al año? <b>(Ninguno = 0)</b></span>
-                            <input type="text" name="ducha3cam" id="ducha3cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="ducha3cam" id="ducha3cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul">¿Tienes instalado un sistema ahorrador de agua en la regadera y las llaves?
                                     (Temporizador, aireador, perlizador, etc.) </span>
-                            <select name="ducha4cam" id="ducha4cam" size="1">
+                            <select class="form-select" name="ducha4cam" id="ducha4cam" size="1">
                                     <option value="6">Si, tengo instalado algún sistema</option>
                                     <option value="9" selected>No, no tengo ningun sistema</option>
                                 </select>
                         </p>
                         <p><span class="azul"> ¿Cuántas veces te cepillas los dientes al día?</span>
-                            <input type="text" name="ducha5cam" id="ducha5cam" class="campo" size="8" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="ducha5cam" id="ducha5cam" class="campo" size="8" onFocus="select()" />
                         </p>
                         <p><span class="azul"> ¿Cuántas veces te lavas las manos o la cara diariamente?</span>
-                            <input type="text" name="ducha6cam" id="ducha6cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="ducha6cam" id="ducha6cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul"> ¿Cuántas veces te razuras con maquina al mes?</span>
-                            <input type="text" name="ducha7cam" id="ducha7cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="ducha7cam" id="ducha7cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul"> ¿Cómo manejas la llave del lavabo?</span>
-                            <select name="ducha8cam" class="grandes" id="ducha8cam" size="1">
+                            <select name="ducha8cam" class="grandes form-select" id="ducha8cam" size="1">
                                     <option value="0.5">Cierro la llave siempre que puedo</option>
                                     <option value="1.5" selected>Abro al empezar y no la cierro hasta acabar</option>
                                 </select>
@@ -122,14 +122,14 @@
                         <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Tu gasto anual en litros de agua por el uso de la ducha y del lavabo es
                                     de...</span>
                             <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="ducha(this.form)" />
-                            <input type="text" name="ducha9cam" id="ducha9cam" class="campo" onFocus="select()" disabled />
+                            <input class="" type="text" name="ducha9cam" id="ducha9cam" class="campo" onFocus="select()" disabled />
                             <b>L</b>
                         </p>
 
 
                         <h4>Continuando en la cocina..</h4>
                         <p><span class="azul">¿Cómo lavas los trastes? </span>
-                            <select name="cocina1cam" class="grandes" id="cocina1cam" size="1">
+                            <select name="cocina1cam" class="grandes form-select" id="cocina1cam" size="1">
                                     <option value="8000" selected>A mano con la llave a chorro</option>
                                     <option value="6400">A mano con un lavado economizador</option>
                                     <option value="7200">Con lavavajillas</option>
@@ -146,40 +146,40 @@
 
                         <h4><strong>Ahora pasamos del lado de lavar ropa</strong></h4>
                         <p><span class="azul">¿Cómo es tu lavadora?</span>
-                            <select name="lavado1cam" class="grandes" id="lavado1cam" size="1">
+                            <select name="lavado1cam" class="grandes form-select" id="lavado1cam" size="1">
                                     <option value="1.2" selected>Es un modelo con más de 5 años</option>
                                     <option value="1">Es un modelo moderno, convencional</option>
                                     <option value="0.7">Es un modelo con economizador de agua</option>
                                 </select>
                         </p>
                         <p><span class="azul">¿Llenas por completo tu lavadora de agua? </span>
-                            <select name="lavado2cam" id="lavado2cam" size="1">
+                            <select class="form-select" name="lavado2cam" id="lavado2cam" size="1">
                                     <option value="1.2" selected>No siempre</option>
                                     <option value="0.8">Siempre</option>
                                 </select>
                         </p>
                         <p><span class="azul">¿Sueles utilizar programas de lavado?</span>
-                            <select name="lavado3cam" id="lavado3cam" size="1">
+                            <select class="form-select" name="lavado3cam" id="lavado3cam" size="1">
                                     <option value="0.7">Si programas cortos</option>
                                     <option value="1.5" selected>Si Programas largos</option>
                                 </select>
                         </p>
                         <p><span class="azul">¿Cuántas veces lavas a la semana?</span>
-                            <input type="text" name="lavado4cam" id="lavado4cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="lavado4cam" id="lavado4cam" class="campo" onFocus="select()" />
                         </p>
                         <p><span class="azul">Número total de personas en la casa:</span>
-                            <input type="text" name="lavado5cam" id="lavado5cam" class="campo" onFocus="select()" />
+                            <input class="form-control-sm form-control" type="text" name="lavado5cam" id="lavado5cam" class="campo" onFocus="select()" />
                         </p>
                         <p class="shadow-sm p-3 mb-5 bg-body rounded"><span class="azul">Tu gasto anual en litros de agua por el lavado de ropa es de...</span>
                             <input type="button" value="Calcular" class="boton2 btn" style="border: 1px solid #16cc1f; background: #139e1a69;" onClick="lavado(this.form)" />
-                            <input type="text" name="lavado6cam" id="lavado6cam" class="campo" onFocus="select()" disabled />
+                            <input class="" type="text" name="lavado6cam" id="lavado6cam" class="campo" onFocus="select()" disabled />
                             <b>L</b>
                         </p>
 
 
                         <h4><strong>Terminamos por el lado de zonas verdes</strong></h4>
                         <p><span class="azul">En mi casa tengo....</span>
-                            <select name="plantas1cam" id="plantas1cam" size="1">
+                            <select class="form-select" name="plantas1cam" id="plantas1cam" size="1">
                                     <option value="1000" selected>Unas cuantas plantas</option>
                                     <option value="0">No tengo ninguna planta</option>
                                 </select>
@@ -189,14 +189,14 @@
                             <input type="text" name="plantas2cam" id="plantas2cam" class="campo" onFocus="select()" /> <b>m²</b>
                         </p>
                         <p><span class="azul">¿Cómo riegas las plantas? </span>
-                            <select name="plantas3cam" id="plantas3cam" size="1">
+                            <select class="form-select" name="plantas3cam" id="plantas3cam" size="1">
                                     <option selected="selected" value="0">Selecciona</option>
                                     <option value="1200">A plena luz del sol</option>
                                     <option value="800">De madrugada o por la noche</option>
                                 </select>
                         </p>
                         <p><span class="azul">¿Cuentas con algún sistema de riego ahorrador? </span>
-                            <select name="plantas4cam" class="grandes" id="plantas4cam" size="1">
+                            <select name="plantas4cam" class="grandes form-select" id="plantas4cam" size="1">
                                     <option selected="selected" value="0">Selecciona</option>
                                     <option value="1.5">No, no tengo ningún sistema ahorrador</option>
                                     <option value="0.5">Sí, tengo un sistema ahorrador</option>
@@ -232,7 +232,7 @@
                                     Hm<sup>3</sup> (ahora es de 130 Hm<sup>3</sup>)</b>
                         </p>
                         <p>
-                            <center><input type="submit" value="limpiar" id="Limpieza"></center>
+                            <center><input class="btn btn-primary" type="submit" value="limpiar" id="Limpieza"></center>
                         </p>
 
                     </form>
@@ -271,7 +271,7 @@
                 <div class="row">
                     <div class="text-center">
                         <p class="text-light equipo" id="fecha"></p>
-                        <p class="bloque_footer">2 Bloque 4D</p>
+                        <p class="bloque_footer">2do Bloque 4D</p>
                     </div>
 
                 </div>

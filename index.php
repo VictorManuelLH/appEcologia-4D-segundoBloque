@@ -22,7 +22,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.min.css">
 
     <link href="./assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -151,7 +151,7 @@
                 </div>
                 <div class="text-center">
                     <p class="text-light equipo" id="fecha"></p>
-                    <p class="bloque_footer">2 Bloque 4D</p>
+                    <p class="bloque_footer">2do Bloque 4D</p>
                 </div>
 
             </div>
